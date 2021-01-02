@@ -6,7 +6,7 @@ public class CarClass {
     private String carKeyValue;
     private String passwardString;
     public int engineCC;
-    final private float amountOfFuelConsumedPersecond=0.02f;
+    final private float amountOfFuelConsumedPersecond = 0.02f;
 
 
     public float getFuelAmount() {
@@ -50,13 +50,14 @@ public class CarClass {
     public float presentAmountofFuel() {
         return fuelAmount;
     }
-    public void addFuel(int fuelAmount){
-        this.fuelAmount+=fuelAmount;
+
+    public void addFuel(int fuelAmount) {
+        this.fuelAmount += fuelAmount;
     }
 
-    public void runForSecond(int timeInSecond){
-        float usedFuel=timeInSecond*amountOfFuelConsumedPersecond;
-        fuelAmount-=usedFuel;
+    public void runForSecond(int timeInSecond) {
+        float usedFuel = timeInSecond * amountOfFuelConsumedPersecond;
+        fuelAmount -= usedFuel;
     }
 
     public String getModelName() {

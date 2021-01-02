@@ -1,6 +1,6 @@
 package javaFifthLecture;
 
-public class SubCarClass extends CarClass{
+public class SubCarClass extends CarClass {
     private int Batary;
     private String Color;
 
@@ -21,9 +21,9 @@ public class SubCarClass extends CarClass{
     }
 
 
-    public SubCarClass (String manu,String model,String key, int cc, float fl,int battery,String color ){
-        super(manu,model,key,cc,fl);
-        Batary=battery;
-        this.Color=color;
+    public SubCarClass(String manu, String model, String key, int cc, float fl, int battery, String color) {
+        super(manu, model, key, cc, fl);
+        Batary = battery;
+        this.Color = color;
     }
 }
